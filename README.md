@@ -14,7 +14,7 @@ O objetivo principal é transformar dados operacionais em **insights estratégic
 
 ---
 
-## 📌 Perguntas de Negócio Resolvidas
+## 📌 Perguntas de Negócio e Resultados
 
 ### 1. Faturamento por País (Visão Geográfica)
 Quais são os 10 principais mercados consumidores da loja em volume de receita?
@@ -28,3 +28,16 @@ FROM Invoice
 GROUP BY BillingCountry
 ORDER BY Faturamento_Total DESC
 LIMIT 10;
+
+Pais,Total_Vendas,Faturamento_Total
+USA,91,$523.06
+Canada,56,$303.96
+France,35,$195.10
+Brazil,35,$190.10
+Germany,35,$156.48
+United Kingdom,28,$112.86
+Czech Republic,14,$90.24
+Portugal,14,$77.24
+India,21,$75.26
+Chile,14,$46.62
+
